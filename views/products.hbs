@@ -1,0 +1,21 @@
+{{#each products}}
+  <div class="column">
+    <div class="col-sm-12 col-md-4">
+      <div class="thumbnail">
+        <a href="/product/{{_id}}">
+        <img height="242" width="200" src="{{imageUri}}" alt="...">
+        <div class="caption">
+          <a href="/product/{{_id}}"><h3>{{title}}</h3></a>
+          <p>{{description}}</p>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+{{/each}}
+<div class="row">
+  <div class=" col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4">
+    <p>Your shopping cart contains {{quant}} item(s)</p>
+    <a href="/cart">View Cart</a>
+  </div>
+</div>

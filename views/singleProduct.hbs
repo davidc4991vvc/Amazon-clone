@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <div class="row">
+    <div id="logo" class="span2" style="float: left;">
+      <!--Sidebar content-->
+      <img src="{{product.imageUri}}" alt="...">
+    </div>
+    <div class="span10">
+      <!--Body content-->
+      <a href="/product/{{product._id}}"><h3>{{product.title}}</h3></a>
+      <p>{{product.description}}</p>
+      <a href="/cart/add/{{product._id}}" class="btn btn-primary">Add to Cart</a>
+    </div>
+  </div>
+</div>

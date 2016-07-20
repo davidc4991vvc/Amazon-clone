@@ -1,0 +1,21 @@
+{{#each cart}}
+  <div class="column">
+    <div class="col-sm-12 col-md-4">
+      <div class="thumbnail">
+        <a href="/product/{{_id}}">
+        <img height="242" width="200" src="{{imageUri}}" alt="...">
+        <div class="caption">
+          <a href="/product/{{_id}}"><h3>{{title}}</h3></a>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="/cart/delete/{{_id}}" class="btn btn-default">Remove from Cart</a>
+{{/each}}
+ <a href="/cart/delete" class="btn btn-default">Empty Cart</a>
+{{#if notEmpty}}
+ <form action="/cart/checkout" method="post">
+    <button class="btn btn-default">Checkout</button>
+ </form>
+{{/if}}

@@ -1,0 +1,21 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#logo {
+  height: 440px;
+  width: 430px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  margin-right: 50px;
+}
+
+#logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
