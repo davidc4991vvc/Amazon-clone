@@ -269,9 +269,13 @@ router.get('/', function(req, res, next) {
         message: error
       });
     }
+    var cartItems = 0;
+    if(req.session.cart){
+      cartItems = req.session.cart.length;
+    }
     res.render('products', {
     	products: products,
-      quant: req.session.cart.length || 0
+      quant: cartItems
     })
   });
 });
