@@ -16,7 +16,7 @@ function randomCode() {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// THE WALL - anything routes below this are protected!
+// THE WALL -  routes below this are protected!
 
 router.use(function(req, res, next){
   if (!req.user) {

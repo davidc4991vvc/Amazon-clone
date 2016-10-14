@@ -33,7 +33,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-var connect = process.env.MONGODB_URI || require('./models/connect');
+var connect = process.env.MONGODB_URI;
 mongoose.connect(connect);
 
 // Passport stuff here
