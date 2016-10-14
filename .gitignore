@@ -1,1 +1,4 @@
 process.env
+.DS_store
+Procfile
+seed.js
