@@ -1,4 +1,4 @@
 process.env
-.DS_store
+.DS_Store
 Procfile
 seed.js
