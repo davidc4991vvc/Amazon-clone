@@ -1,6 +1,6 @@
 # Amazon-Clone
 
-Crude Amazon clone written as an afternoon assignment at Horizons School of Technology.
+Reimplementation of a simple e-commerce platform like Amazon. Written as an afternoon assignment at Horizons School of Technology.
 
 [Link to live app](http://protected-garden-89358.herokuapp.com/) 
 
